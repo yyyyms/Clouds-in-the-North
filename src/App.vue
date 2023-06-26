@@ -1,9 +1,9 @@
 <script setup>
-    // import TabBar from "@/components/tab-bar/tab-bar.vue";
-    import TabBar from "@/components/tab-bar/tab-bar_02.vue";
-    import Loading from "@/components/loading/loading.vue";
-    import { useRoute } from "vue-router";
-    const route = useRoute()
+// import TabBar from "@/components/tab-bar/tab-bar.vue";
+import TabBar from "@/components/tab-bar/tab-bar_02.vue";
+import Loading from "@/components/loading/loading.vue";
+import { useRoute } from "vue-router";
+const route = useRoute()
 </script>
 
 <template>
@@ -14,6 +14,7 @@
         </keep-alive> -->
 
         <!-- 新写法:slot -->
+
         <router-view v-slot="{ Component }">
             <keep-alive include="home">
                 <component :is="Component"></component>
@@ -22,11 +23,8 @@
 
         <!-- <tab-bar v-if="!route.meta.hideTabBar"></tab-bar> -->
         <tab-bar></tab-bar>
-        <loading></loading>
+        <!-- <loading></loading> -->
     </div>
 </template>
 
-<style scoped>
-
-
-</style>
+<style scoped></style>

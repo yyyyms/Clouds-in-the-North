@@ -1,13 +1,13 @@
 <template>
     <div class="favor">
-        <h2>favor</h2>
+        <scenerySwipe></scenerySwipe>
+        <sreach></sreach>
     </div>
 </template>
 
 <script setup>
-    
-
+import scenerySwipe from "./swipe.vue";
+import sreach from './sreach.vue'
 </script>
 
-<style lang="less" scoped>
-</style>
+<style lang="less" scoped></style>
