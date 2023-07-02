@@ -7,9 +7,8 @@ const useCityStore = defineStore("city", {
         // 注意是对象形式
         curCity: {
             cityName: "广州"
-        },
-        scenicSpot:[],
-        scenicSpotShu:null,
+        }
+        
     }),
     actions: {
         async fetchAllCitys() {

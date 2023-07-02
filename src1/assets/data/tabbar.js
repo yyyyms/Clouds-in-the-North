@@ -9,7 +9,7 @@ const tabbardata = [
     text: "景点",
     image: "tab_favor.png",
     imgActive: "tab_favor_active.png",
-    path: "/Scenic",
+    path: "/favor",
   },
   {
     text: "订单",
